@@ -1,0 +1,10 @@
+version: '3'
+services:
+  nodejs:
+    image: node
+    volumes:
+      - .:/js_sendbox
+    working_dir: /js_sendbox
+    tty: true
+    ports:
+      - 3001:3001
